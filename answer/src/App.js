@@ -6,8 +6,10 @@ function App() {
       <header className="app-header">
 
         <p>
-          Descubra o quão machista opressor você é >:()
+          Descubra o quão Machista opressor você é >:()
         </p>
+
+        
 
       </header>
     </div>

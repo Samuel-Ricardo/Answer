@@ -1,8 +1,31 @@
-.app-header{
-  padding-top: 10px;
-  padding-bottom: 10px;
+.App {
+  background-color: #b4b4b4;
+  padding: 0;
+}
 
-  max-height: fit-content;
-/*949494 b4b4b4*/
-  background-color: #949494;
+.app-header {
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+  padding-left: 15pt;
+  padding-right: 15pt;
+
+  max-height: inherit;
+
+  display: flex;
+
+  /*
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+*/
+  /*949494 b4b4b4*/
+  background-color: #adadad;
+}
+
+.app-header p {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-size: 20pt;
+  font-family: System, Arial;
 }
