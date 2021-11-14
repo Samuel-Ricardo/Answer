@@ -5,11 +5,11 @@ function App() {
     <div className="app">
       <header className="app-header">
         <p>
-          Descubra o quão Machista opressor você é >:()
+           Descubra o quão Machista opressor você é >:()
         </p>
       </header>
 
-
+      
 
       <footer className="app-footer">
         <p>

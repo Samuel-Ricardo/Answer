@@ -1,17 +1,19 @@
-.App {
-  background-color: #b4b4b4;
+.app {
+  background-color: #dddddd;
   padding: 0;
+  min-height: 100vh;
 }
 
 .app-header {
   padding-top: 10pt;
   padding-bottom: 10pt;
-  padding-left: 15pt;
-  padding-right: 15pt;
+  padding-left: 25pt;
+  padding-right: 25pt;
 
   max-height: inherit;
 
   display: flex;
+
 
   /*
   flex-direction: column;
@@ -19,14 +21,14 @@
   justify-content: center;
 */
   /*949494 b4b4b4*/
-  background-color: #adadad;
+  background-color: #aaaaaa;
 }
 
 .app-header p {
   margin: 0px;
   padding: 0px;
-  color: white;
-  font-size: 20pt;
+  color: black;
+  font-size: 18pt;
   font-family: System, Arial;
 }
 
@@ -37,6 +39,18 @@
   align-items: center;
   justify-content: center;
 
+
   position: absolute;
   bottom: 0;
+  width: 100%;
+}
+
+.app-footer p {
+
+  align-self: center;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
 }
