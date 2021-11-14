@@ -26,3 +26,11 @@
   font-size: 14pt;
   font-family: System, Arial;
 }
+
+.Form .description{
+  margin: 10px;
+  padding: 0px;
+  color: gray;
+  font-size: 10pt;
+  font-family: System, Arial;
+}

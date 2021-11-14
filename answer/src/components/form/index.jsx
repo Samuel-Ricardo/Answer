@@ -6,6 +6,7 @@ export default (props) => {
       <div className="Form">
 
 <p className="title"> {props.title} </p>
+<p className="description"> {props.description} </p>
 
         {props.children}
       </div>
