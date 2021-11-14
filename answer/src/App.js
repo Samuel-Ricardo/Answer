@@ -2,9 +2,15 @@ import './App.css';
 
 import Form from './components/Form';
 import Question from './components/Question';
+
 import MultipleChoice from './components/MultipleChoice';
+import Choice from './components/Choice';
 
 function App() {
+
+  //const [active, setActive] = useState([false, false, false]);
+
+
   return (
     <div className="app">
       <header className="app-header">
@@ -24,7 +30,9 @@ function App() {
         >
 
           <MultipleChoice>
-            
+            <Choice>
+
+            </Choice>
           </MultipleChoice>
 
         </Question>
