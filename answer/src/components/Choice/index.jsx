@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 
-export default ({ canSelect, setCanSelect, choice, text }) => {
+export default ({ canSelect, setCanSelect, choice, text, image }) => {
 
   const [active, setActive] = useState(false);
 
@@ -32,6 +32,8 @@ export default ({ canSelect, setCanSelect, choice, text }) => {
       <p>
         {text}
       </p>
+
+      {image != undefined ? <img src={image}/> : <p/>}
     </div>
   )
 }

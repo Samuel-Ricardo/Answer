@@ -1,7 +1,9 @@
 .Choice{
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+
+  justify-content: space-between;
 
   background-color: brown;
 
@@ -14,12 +16,32 @@
 
   margin-bottom: 2px;
 
+  padding-right: 20pt;
+  padding-left: 20pt;
+
+  padding: 20pt;
+
   color: black;
 
 }
 
+.Choice p{
+  display: inline;
+  align-self: center;
+
+  margin-right: 20pt;
+
+  color: black;
+
+  font-size: 16pt;
+}
+
 .Choice:hover{
   background-color: yellow;
+}
+
+.Choice img{
+  width: 200px;
 }
 
 .selected{ background-color: red; }
