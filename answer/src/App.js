@@ -3,6 +3,8 @@ import './App.css';
 import Form from './components/Form';
 import Question from './components/Question';
 
+import pedro from './images/pedro_1.jpeg'
+
 import MultipleChoice from './components/MultipleChoice';
 import Choice from './components/Choice';
 import { useState } from 'react';
@@ -42,6 +44,10 @@ console.log(choice1)
               image="https://i.pinimg.com/564x/a3/51/62/a35162a94264bbcfd1fb1f8068a64459.jpg"
             />
             <Choice
+              text="Indio emo bombado <:()"
+              image="https://www.shitpostbot.com/img/sourceimages/afro-hulk-5a654cfa67b17.jpeg"
+            />
+            <Choice
               text="Slá mano, Paraguaio >:|"
               image="https://i.ytimg.com/vi/k7fYDhXO3Mo/maxresdefault.jpg"
             />
@@ -49,6 +55,21 @@ console.log(choice1)
 
         </Question>
 
+        <Question title="Qual o Lugar de Mulher?"
+          image = {pedro}
+        >
+
+          <Choice text="Na Cozinha <:()" image="http://images7.memedroid.com/images/UPLOADED130/549f106e01c15.jpeg"/>
+
+          <Choice
+            text="No ambiente divino >:| |"
+            image="https://i.pinimg.com/originals/a4/0f/65/a40f65859d4e03b8c21c50577ec5be10.jpg" />
+
+          <Choice
+            text="Qualquer lugar < : | |"
+            image="https://i.kym-cdn.com/entries/icons/facebook/000/032/239/cover3.jpg"
+          />
+        </Question>
       </Form>
 
       <footer className="app-footer">

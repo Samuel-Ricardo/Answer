@@ -1,5 +1,7 @@
 .Question{
 
+  margin-top: 10pt;
+
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
 
@@ -15,6 +17,14 @@
 
   position: relative;
   width: 100%;
+}
+
+.Question img{
+  margin-bottom: 10pt;
+
+}
+
+.Queston .children{
 }
 
 .Question .title{

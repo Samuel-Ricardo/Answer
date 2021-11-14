@@ -7,8 +7,10 @@ export default (props) => {
 
       <p className="title"> {props.title} </p>
       <p className="description"> {props.description} </p>
+      {props.image != undefined ? <img src={props.image} /> : <p />}
 
       {props.children}
+
     </div>
   )
 }
