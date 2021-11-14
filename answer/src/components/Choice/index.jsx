@@ -1,20 +1,28 @@
 import React, { useState } from 'react';
 import './style.css';
 
-export default (props, {canSelect, setCanSelect}) => {
+export default ({ canSelect, setCanSelect, choice, text }) => {
 
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
 
-    if (active) setActive(false);
+    if (active) {
+      setCanSelect(true);
+      setActive(false);
+    } else {
+      if (canSelect) {
+        setCanSelect(false);
+        setActive(true);
 
-    if (canSelect) {
-      setActive(!active);
-
-      if(active) setCanSelect(false); else setCanSelect(true);
+        choice(text)
+      }
     }
+
+    console.log("can select:" + canSelect);
+    console.log("active:" + active);
   }
+
 
   return (
     <div
@@ -22,7 +30,7 @@ export default (props, {canSelect, setCanSelect}) => {
       onClick={() => handleClick()}
     >
       <p>
-        {this.props.children}
+        {text}
       </p>
     </div>
   )

@@ -3,7 +3,24 @@
   display: flex;
   flex-direction: column;
 
+  background-color: brown;
+
   position: relative;
 
-  width: min-content;
+  width: 90%;
+
+  margin-left: 20px;
+  margin-right: 20px;
+
+  margin-bottom: 2px;
+
+  color: black;
+
 }
+
+.Choice:hover{
+  background-color: yellow;
+}
+
+.selected{ background-color: red; }
+.unselected{ background-color: green;}
