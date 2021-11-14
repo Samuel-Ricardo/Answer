@@ -1,0 +1,9 @@
+.Choice{
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  width: min-content;
+}
