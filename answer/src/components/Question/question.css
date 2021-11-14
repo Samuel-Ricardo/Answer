@@ -1,0 +1,15 @@
+.Question .title{
+  margin: 10px;
+  padding: 0px;
+  color: black;
+  font-size: 14pt;
+  font-family: System, Arial;
+}
+
+.Question .description{
+  margin: 10px;
+  padding: 0px;
+  color: gray;
+  font-size: 10pt;
+  font-family: System, Arial;
+}
