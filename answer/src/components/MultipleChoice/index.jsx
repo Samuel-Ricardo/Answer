@@ -4,7 +4,7 @@ import './style.css';
 
 export default (props) => {
 
-  const [canSelect, setCanSelect] = useState(initialState)
+  const [canSelect, setCanSelect] = useState(true)
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
@@ -15,12 +15,21 @@ export default (props) => {
     }
   }
 
+  let children = new Array();
+
+  for (let index = 0; index < props.children.length; index++){
+
+    children.push(
+      React.cloneElement(props.children[index], {
+        canSelect: canSelect,
+        setCanSelect: setCanSelect,
+        choice: props.choice
+      }))
+  }
+
   return (
     <div className="MultipleChoice">
-      {React.cloneElement(this.props.children, {
-        canSelect,
-        setCanSelect
-      })}
+      {children}
     </div>
   )
 }

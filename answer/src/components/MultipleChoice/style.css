@@ -5,7 +5,18 @@
 
   position: relative;
 
-  width: min-content;
+  width: 100%;
+
+  margin: 20px;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: blueviolet;
+
+  border-radius: 20px;
+
+  width: 100%;
 }
 
 .MultipleChoice .Choice{
