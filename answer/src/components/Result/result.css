@@ -2,7 +2,9 @@
 
   align-self: center;
 
-  background-color: aliceblue;
+  background-color: white;
+
+  box-shadow: 5px 5px 25px black;
 
   border-radius: 20px;
 
@@ -34,4 +36,8 @@
   color: gray;
   font-size: 13pt;
   font-family: System, Arial;
+}
+
+.Result img {
+  width: 400px;
 }

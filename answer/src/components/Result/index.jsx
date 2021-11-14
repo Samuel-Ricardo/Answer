@@ -1,17 +1,20 @@
 import React from 'react';
-import './form.css';
+import './result.css';
 
 import pera from '../../images/pera.jpeg'
 
+const title = "VÔCE ESTA NIVEL PÊRA DE MACHISMO"
+const desc = "ESSE È O NIVEL MAIS PERIGOSO VOCÊ PRECISA SE DESCONTRUIR IMEDIATAMENTE"
+
 export default (props) => {
   return (
-      <div className="Form">
+    <div className="Result">
 
-<p className="title"> {props.title} </p>
-      <p className="description"> {props.description} </p>
-      <img src={pera}/>
+      <p className="title"> {title} </p>
+      <p className="description"> {desc} </p>
+      <img src={pera} />
 
-        {props.children}
-      </div>
-    )
+      {props.children}
+    </div>
+  )
 }
