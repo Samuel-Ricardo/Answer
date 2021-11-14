@@ -33,9 +33,18 @@ console.log(choice1)
           <MultipleChoice
             choice={setChoice1}
           >
-            <Choice text="Homi >:("/>
-            <Choice text="Femea :D"/>
-            <Choice text="Slá mano, Paraguaio >:|"/>
+            <Choice
+              text="Homi >:("
+              image="https://i.kym-cdn.com/photos/images/newsfeed/001/370/937/834.png"
+            />
+            <Choice
+              text="Femea :D"
+              image="https://i.pinimg.com/564x/a3/51/62/a35162a94264bbcfd1fb1f8068a64459.jpg"
+            />
+            <Choice
+              text="Slá mano, Paraguaio >:|"
+              image="https://i.ytimg.com/vi/k7fYDhXO3Mo/maxresdefault.jpg"
+            />
           </MultipleChoice>
 
         </Question>
