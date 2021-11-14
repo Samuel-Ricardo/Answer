@@ -5,12 +5,13 @@ import Question from './components/Question';
 
 import MultipleChoice from './components/MultipleChoice';
 import Choice from './components/Choice';
+import { useState } from 'react';
 
 function App() {
 
-  //const [active, setActive] = useState([false, false, false]);
+  const [choice1, setChoice1] = useState("");
 
-
+console.log(choice1)
   return (
     <div className="app">
       <header className="app-header">
@@ -29,10 +30,12 @@ function App() {
           description=">:"
         >
 
-          <MultipleChoice>
-            <Choice>
-
-            </Choice>
+          <MultipleChoice
+            choice={setChoice1}
+          >
+            <Choice text="Homi >:("/>
+            <Choice text="Femea :D"/>
+            <Choice text="Slá mano, Paraguaio >:|"/>
           </MultipleChoice>
 
         </Question>
