@@ -4,6 +4,10 @@ import Form from './components/Form';
 import Question from './components/Question';
 
 import pedro from './images/pedro_1.jpeg'
+import bela from './images/bela.jpeg'
+import lino from './images/lino.jpeg'
+import pedro2 from './images/pedro_2.jpeg'
+import pedro3 from './images/pedro_3.jpeg'
 
 import MultipleChoice from './components/MultipleChoice';
 import Choice from './components/Choice';
@@ -12,8 +16,12 @@ import { useState } from 'react';
 function App() {
 
   const [choice1, setChoice1] = useState("");
+  const [choice2, setChoice2] = useState("");
+  const [choice3, setChoice3] = useState("");
 
-console.log(choice1)
+  console.log(choice1)
+  console.log(choice2)
+  console.log(choice3)
   return (
     <div className="app">
       <header className="app-header">
@@ -55,8 +63,10 @@ console.log(choice1)
 
         </Question>
 
-        <Question title="Qual o Lugar de Mulher?"
-          image = {pedro}
+        <Question
+          title="Qual o Lugar de Mulher?"
+          image={pedro3}
+          choice={setChoice1}
         >
 
           <Choice text="Na Cozinha <:()" image="http://images7.memedroid.com/images/UPLOADED130/549f106e01c15.jpeg"/>
@@ -66,8 +76,31 @@ console.log(choice1)
             image="https://i.pinimg.com/originals/a4/0f/65/a40f65859d4e03b8c21c50577ec5be10.jpg" />
 
           <Choice
+            text="No Ambiente escolar < : | - |"
+            image={bela}
+          />
+
+          <Choice
             text="Qualquer lugar < : | |"
             image="https://i.kym-cdn.com/entries/icons/facebook/000/032/239/cover3.jpg"
+          />
+        </Question>
+
+        <Question
+          title="COMO VC É NO TWIITER >:("
+          image={pedro2}
+          choice={setChoice1}
+        >
+
+          <Choice text="Respeitador de Mulheres official :()" image={lino}/>
+
+          <Choice
+            text="Macho Escroto >:()"
+            image="https://i.pinimg.com/originals/a4/0f/65/a40f65859d4e03b8c21c50577ec5be10.jpg" />
+
+          <Choice
+            text="Zoro sola < : | |"
+            image="https://i.imgur.com/IBIwoEp.jpg"
           />
         </Question>
       </Form>
