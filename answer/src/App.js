@@ -1,6 +1,7 @@
 import './App.css';
 
-import Form from './components/Form'
+import Form from './components/Form';
+import Question from './components/Question';
 
 function App() {
   return (
@@ -12,9 +13,16 @@ function App() {
       </header>
 
       <Form
-        title="Pedro Julgamentos >:("
+        title="):< Pedro Julgamentos >:("
         description="Ele irá julgar o seu machismo"
       >
+
+        <Question
+          title="Quel seue genere?"
+          description=">:"
+        >
+
+        </Question>
 
       </Form>
 
@@ -28,3 +36,16 @@ function App() {
 }
 
 export default App;
+
+
+
+/*
+
+"eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+
+*/
