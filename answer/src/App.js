@@ -2,6 +2,7 @@ import './App.css';
 
 import Form from './components/Form';
 import Question from './components/Question';
+import Button from './components/Button';
 
 import pedro from './images/pedro_1.jpeg'
 import bela from './images/bela.jpeg'
@@ -18,6 +19,14 @@ function App() {
   const [choice1, setChoice1] = useState("");
   const [choice2, setChoice2] = useState("");
   const [choice3, setChoice3] = useState("");
+
+  const [result, setResult] = useState(0)
+
+  const onClick = () => {
+
+    setResult(choice1 + choice2 + choice3);
+
+  }
 
   console.log(choice1)
   console.log(choice2)
@@ -103,6 +112,10 @@ function App() {
             image="https://i.imgur.com/IBIwoEp.jpg"
           />
         </Question>
+
+        <Button text="Descubrir Agora <:()" onClick={onClick} />
+
+        {result != 0 ? <Result result={result}/> : <></>}
       </Form>
 
       <footer className="app-footer">

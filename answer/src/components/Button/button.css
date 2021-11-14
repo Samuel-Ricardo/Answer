@@ -1,0 +1,44 @@
+.Question{
+
+  margin-top: 10pt;
+
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+
+  display: flex;
+
+
+
+  padding: 20px;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  width: 100%;
+}
+
+.Question img{
+  margin-bottom: 10pt;
+
+}
+
+.Queston .children{
+}
+
+.Question .title{
+  margin: 10px;
+  padding: 0px;
+  color: black;
+  font-size: 20pt;
+  font-family: System, Arial;
+}
+
+.Question .description{
+  margin: 10px;
+  padding: 0px;
+  color: gray;
+  font-size: 10pt;
+  font-family: System, Arial;
+}
