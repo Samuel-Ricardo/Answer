@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 
-export default ({ canSelect, setCanSelect, choice, text, image }) => {
+export default ({ canSelect, setCanSelect, choice, text, image, value }) => {
 
   const [active, setActive] = useState(false);
 
@@ -15,7 +15,7 @@ export default ({ canSelect, setCanSelect, choice, text, image }) => {
         setCanSelect(false);
         setActive(true);
 
-        choice(text)
+        choice(value)
       }
     }
 
