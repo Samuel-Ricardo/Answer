@@ -1,0 +1,13 @@
+.MultipleChoice{
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  width: min-content;
+}
+
+.MultipleChoice .Choice{
+  margin: 5pt;
+}

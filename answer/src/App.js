@@ -2,6 +2,7 @@ import './App.css';
 
 import Form from './components/Form';
 import Question from './components/Question';
+import MultipleChoice from './components/MultipleChoice';
 
 function App() {
   return (
@@ -21,7 +22,11 @@ function App() {
           title="Quel seue genere?"
           description=">:"
         >
-          
+
+          <MultipleChoice>
+            
+          </MultipleChoice>
+
         </Question>
 
       </Form>
