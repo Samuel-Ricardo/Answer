@@ -1,0 +1,28 @@
+.Form{
+
+  align-self: center;
+
+  background-color: aliceblue;
+  border-radius: 20px;
+
+  display: flex;
+
+  margin: 50px;
+
+  padding: 20px;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 75%;
+  min-height: 75%;
+}
+
+.Form .title{
+  margin: 10px;
+  padding: 0px;
+  color: black;
+  font-size: 14pt;
+  font-family: System, Arial;
+}
