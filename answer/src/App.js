@@ -32,6 +32,7 @@ function App() {
   console.log(choice1)
   console.log(choice2)
   console.log(choice3)
+
   return (
     <div className="app">
       <header className="app-header">
@@ -80,50 +81,53 @@ function App() {
         <Question
           title="Qual o Lugar de Mulher?"
           image={pedro3}
-          choice={setChoice1}
         >
 
-          <Choice
-            value={100}
-            text="Na Cozinha <:()"
-            image="http://images7.memedroid.com/images/UPLOADED130/549f106e01c15.jpeg" />
+          <MultipleChoice choice={setChoice2}>
+            <Choice
+              value={100}
+              text="Na Cozinha <:()"
+              image="http://images7.memedroid.com/images/UPLOADED130/549f106e01c15.jpeg" />
 
-          <Choice
-            value={10}
-            text="No ambiente divino >:| |"
-            image="https://i.pinimg.com/originals/a4/0f/65/a40f65859d4e03b8c21c50577ec5be10.jpg" />
+            <Choice
+              value={10}
+              text="No ambiente divino >:| |"
+              image="https://i.pinimg.com/originals/a4/0f/65/a40f65859d4e03b8c21c50577ec5be10.jpg" />
 
-          <Choice
-            value={0}
-            text="No Ambiente escolar < : | - |"
-            image={bela}
-          />
+            <Choice
+              value={0}
+              text="No Ambiente escolar < : | - |"
+              image={bela}
+            />
 
-          <Choice
-            value={-10}
-            text="Qualquer lugar < : | |"
-            image="https://i.kym-cdn.com/entries/icons/facebook/000/032/239/cover3.jpg"
-          />
+            <Choice
+              value={-10}
+              text="Qualquer lugar < : | |"
+              image="https://i.kym-cdn.com/entries/icons/facebook/000/032/239/cover3.jpg"
+            />
+          </MultipleChoice>
         </Question>
 
         <Question
           title="COMO VC É NO TWIITER >:("
           image={pedro2}
-          choice={setChoice1}
         >
 
-          <Choice value={-110} text="Respeitador de Mulheres official :()" image={lino}/>
+          <MultipleChoice choice={setChoice3}>
+            <Choice value={-110} text="Respeitador de Mulheres official :()" image={lino}/>
 
-          <Choice
-            value={100}
-            text="Macho Escroto >:()"
-            image="https://i.ytimg.com/vi/rOxeklTtH9c/sddefault.jpg" />
+            <Choice
+              value={100}
+              text="Macho Escroto >:()"
+              image="https://i.ytimg.com/vi/rOxeklTtH9c/sddefault.jpg" />
 
-          <Choice
-            value={0}
-            text="Zoro sola < : | |"
-            image="https://i.imgur.com/IBIwoEp.jpg"
-          />
+            <Choice
+              value={1}
+              text="Zoro sola < : | |"
+              image="https://i.imgur.com/IBIwoEp.jpg"
+            />
+          </MultipleChoice>
+
         </Question>
 
         <Button text="Descubrir Agora <:()" onClick={onClick} />
